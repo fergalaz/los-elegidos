@@ -61,7 +61,14 @@
         </div>
       </div>
     `;
-    document.body.insertBefore(bar, document.body.firstChild);
+    // Inserta el picker justo antes del bloque de contenido principal
+    // (después del título/intro). Funciona en master, índice de década y año.
+    const content = document.querySelector('.decades-grid, .grid, ol');
+    if (content && content.parentNode) {
+      content.parentNode.insertBefore(bar, content);
+    } else {
+      document.body.insertBefore(bar, document.body.firstChild);
+    }
     bar.querySelectorAll('.sp-btn').forEach(btn => {
       btn.addEventListener('click', () => setService(btn.dataset.service));
     });
