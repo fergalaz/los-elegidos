@@ -53,7 +53,7 @@
     bar.id = 'service-picker';
     bar.innerHTML = `
       <div class="sp-inner">
-        <span class="sp-label">Abrir cada álbum en</span>
+        <span class="sp-label">Elige la plataforma streaming que usas</span>
         <div class="sp-buttons" role="tablist">
           ${Object.entries(SERVICES).map(([key, s]) => `
             <button class="sp-btn" data-service="${key}" style="--accent: ${s.color}" role="tab" aria-label="${s.name}">${s.name}</button>
