@@ -1,6 +1,6 @@
-# Discos Curados
+# Los Elegidos
 
-40 discos por año, desde 1970 a 1999. Tres décadas, 1200 álbumes curados.
+40 discos elegidos por año, desde 1970 a 1999. Tres décadas, 1200 álbumes.
 
 ## Cómo funciona
 
