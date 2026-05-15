@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Discos de los 80s — Apple Music</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", system-ui, sans-serif;
+    max-width: 920px;
+    margin: 40px auto;
+    padding: 0 24px 80px;
+    background: #fafafa;
+    color: #111;
+    line-height: 1.5;
+  }
+  nav.decades { display: flex; gap: 18px; margin-bottom: 24px; font-size: 14px; }
+  nav.decades a { color: #888; text-decoration: none; }
+  nav.decades a:hover { color: #fa233b; }
+  nav.decades a.active { color: #111; font-weight: 700; }
+  h1 { font-size: 36px; margin-bottom: 6px; letter-spacing: -0.02em; }
+  .sub { color: #666; margin-bottom: 36px; font-size: 15px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 22px 22px 20px;
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.12);
+    border-color: #ddd;
+  }
+  .year {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fa233b;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+  .tag {
+    color: #444;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+    color: #888;
+    font-size: 13px;
+  }
+</style>
+  <link rel="stylesheet" href="/assets/app.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <nav class="decades">
+    <a href="/70s/">70s</a>
+    <a href="/80s/" class="active">80s</a>
+    <a href="/90s/">90s</a>
+  </nav>
+
+  <h1>Discos de los 80s</h1>
+  <p class="sub">40 discos curados por año. Clic en un año para abrir su lista y desde ahí cada álbum se abre en Apple Music.</p>
+
+  <div class="grid">
+    <a class="card" href="1980.html">
+      <div class="year">1980</div>
+      <div class="tag">Post-punk + NWOBHM debutan. AOR consolida.</div>
+    </a>
+    <a class="card" href="1981.html">
+      <div class="year">1981</div>
+      <div class="tag">MTV se lanza. Synth-pop británico irrumpe.</div>
+    </a>
+    <a class="card" href="1982.html">
+      <div class="year">1982</div>
+      <div class="tag">Thriller cierra el año. Rock argentino post-Malvinas.</div>
+    </a>
+    <a class="card" href="1983.html">
+      <div class="year">1983</div>
+      <div class="tag">Synth-pop peak. Madonna y R.E.M. debutan.</div>
+    </a>
+    <a class="card" href="1984.html">
+      <div class="year">1984</div>
+      <div class="tag">Purple Rain + Born in the USA. Soda y Prisioneros debutan.</div>
+    </a>
+    <a class="card" href="1985.html">
+      <div class="year">1985</div>
+      <div class="tag">Live Aid. Brothers in Arms. a-ha debuta.</div>
+    </a>
+    <a class="card" href="1986.html">
+      <div class="year">1986</div>
+      <div class="tag">Peter Gabriel — So. Bon Jovi explota. Peak rock en español.</div>
+    </a>
+    <a class="card" href="1987.html">
+      <div class="year">1987</div>
+      <div class="tag">Joshua Tree. GnR irrumpe. Hip-hop golden age.</div>
+    </a>
+    <a class="card" href="1988.html">
+      <div class="year">1988</div>
+      <div class="tag">Alt-rock breakthrough. N.W.A. inaugura el gangsta rap.</div>
+    </a>
+    <a class="card" href="1989.html">
+      <div class="year">1989</div>
+      <div class="tag">Grunge gestándose. Madchester nace.</div>
+    </a>
+  </div>
+
+  <footer>
+    Curatoría sobre la base de la lista original de @vinyl_community (1986). Listas para fgalaz@mstudioprod.com.
+  </footer>
+</body>
+</html>

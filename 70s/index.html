@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Discos de los 70s — Apple Music</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", system-ui, sans-serif;
+    max-width: 920px;
+    margin: 40px auto;
+    padding: 0 24px 80px;
+    background: #fafafa;
+    color: #111;
+    line-height: 1.5;
+  }
+  nav.decades { display: flex; gap: 18px; margin-bottom: 24px; font-size: 14px; }
+  nav.decades a { color: #888; text-decoration: none; }
+  nav.decades a:hover { color: #fa233b; }
+  nav.decades a.active { color: #111; font-weight: 700; }
+  h1 { font-size: 36px; margin-bottom: 6px; letter-spacing: -0.02em; }
+  .sub { color: #666; margin-bottom: 36px; font-size: 15px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 22px 22px 20px;
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.12);
+    border-color: #ddd;
+  }
+  .year { font-size: 30px; font-weight: 700; color: #fa233b; letter-spacing: -0.01em; margin-bottom: 6px; }
+  .tag { color: #444; font-size: 13px; line-height: 1.45; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid #eee; color: #888; font-size: 13px; }
+</style>
+  <link rel="stylesheet" href="/assets/app.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <nav class="decades">
+    <a href="/70s/" class="active">70s</a>
+    <a href="/80s/">80s</a>
+    <a href="/90s/">90s</a>
+  </nav>
+
+  <h1>Discos de los 70s</h1>
+  <p class="sub">40 discos curados por año. Clic en un año para abrir su lista y desde ahí cada álbum se abre en Apple Music.</p>
+
+  <div class="grid">
+    <a class="card" href="1970.html">
+      <div class="year">1970</div>
+      <div class="tag">Sabbath funda el heavy metal. Singer-songwriter peak.</div>
+    </a>
+    <a class="card" href="1971.html">
+      <div class="year">1971</div>
+      <div class="tag">Tapestry + Blue + Imagine + What's Going On. Glam nace.</div>
+    </a>
+    <a class="card" href="1972.html">
+      <div class="year">1972</div>
+      <div class="tag">Ziggy + Exile. Sui Generis y Pescado Rabioso debutan.</div>
+    </a>
+    <a class="card" href="1973.html">
+      <div class="year">1973</div>
+      <div class="tag">Dark Side of the Moon. Queen y Springsteen debutan.</div>
+    </a>
+    <a class="card" href="1974.html">
+      <div class="year">1974</div>
+      <div class="tag">KISS y Bad Company debutan. Triana en España.</div>
+    </a>
+    <a class="card" href="1975.html">
+      <div class="year">1975</div>
+      <div class="tag">Born to Run + Wish You Were Here. Patti Smith debuta.</div>
+    </a>
+    <a class="card" href="1976.html">
+      <div class="year">1976</div>
+      <div class="tag">Punk irrumpe con Ramones. Hotel California.</div>
+    </a>
+    <a class="card" href="1977.html">
+      <div class="year">1977</div>
+      <div class="tag">Annus mirabilis: Rumours + Aja + Bowie/Eno + Pistols.</div>
+    </a>
+    <a class="card" href="1978.html">
+      <div class="year">1978</div>
+      <div class="tag">Van Halen y Serú Girán debutan. New wave consolida.</div>
+    </a>
+    <a class="card" href="1979.html">
+      <div class="year">1979</div>
+      <div class="tag">The Wall + London Calling. Post-punk nace.</div>
+    </a>
+  </div>
+
+  <footer>Curatoría por década para fgalaz@mstudioprod.com.</footer>
+</body>
+</html>

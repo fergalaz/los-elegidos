@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discos Curados — 30 años de música por década</title>
+<meta name="description" content="40 discos curados por año, desde 1970 a 1999. Tres décadas, 1200 álbumes. Clic y se abre en tu reproductor favorito.">
+<meta property="og:title" content="Discos Curados — 30 años de música">
+<meta property="og:description" content="40 discos por año, 1200 álbumes en total. De 1970 a 1999.">
+<meta property="og:type" content="website">
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", system-ui, sans-serif;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    background: #fafafa;
+    color: #111;
+    line-height: 1.5;
+  }
+  header.hero { margin-top: 40px; margin-bottom: 48px; }
+  h1 { font-size: 44px; margin: 0 0 10px; letter-spacing: -0.025em; line-height: 1.1; }
+  .lead { color: #555; font-size: 17px; max-width: 620px; margin-bottom: 8px; }
+  .stats { color: #999; font-size: 14px; }
+  .decades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+  .decade-card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 32px 28px 28px;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    color: inherit;
+  }
+  .decade-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px -14px rgba(0,0,0,.14);
+    border-color: #ddd;
+  }
+  .decade-card .label {
+    font-size: 13px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .decade-card .name {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--accent-color, #1DB954);
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+    line-height: 1;
+  }
+  .decade-card .desc {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  section.about {
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1px solid #eee;
+    color: #555;
+    font-size: 14.5px;
+    line-height: 1.7;
+    max-width: 680px;
+  }
+  section.about h2 {
+    color: #111;
+    font-size: 17px;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+    color: #888;
+    font-size: 13px;
+  }
+  footer a { color: #555; text-decoration: none; }
+  footer a:hover { color: var(--accent-color, #1DB954); }
+</style>
+  <link rel="stylesheet" href="/assets/app.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>Discos Curados</h1>
+    <p class="lead">40 discos por año, desde 1970 a 1999. Tres décadas. 1200 álbumes.</p>
+    <p class="stats">Mainstream + rock latino + soundtracks + nichos clave por año.</p>
+  </header>
+
+  <div class="decades-grid">
+    <a class="decade-card" href="/70s/">
+      <div class="label">Década</div>
+      <div class="name">70s</div>
+      <div class="desc">Singer-songwriter, glam, prog, punk, post-punk. Nace el rock argentino.</div>
+    </a>
+    <a class="decade-card" href="/80s/">
+      <div class="label">Década</div>
+      <div class="name">80s</div>
+      <div class="desc">MTV, synth-pop, hair metal, hip-hop golden age. Soda, Charly, Prisioneros.</div>
+    </a>
+    <a class="decade-card" href="/90s/">
+      <div class="label">Década</div>
+      <div class="name">90s</div>
+      <div class="desc">Grunge, britpop, electrónica, alt-rock. Café Tacvba, Calamaro, Aterciopelados.</div>
+    </a>
+  </div>
+
+  <section class="about">
+    <h2>Cómo funciona</h2>
+    <p>Elegí tu servicio de streaming favorito arriba (Spotify, Apple Music, YouTube Music, Tidal, Deezer o Amazon Music). Tu preferencia queda guardada en este navegador. Cuando hagas clic en un disco, se abrirá la búsqueda directa en el servicio que elegiste.</p>
+  </section>
+
+  <footer>
+    Curaduría por <a href="https://mstudioprod.com" target="_blank" rel="noopener">Fernando Galaz</a>. Hecho con HTML y un poco de JavaScript.
+  </footer>
+</body>
+</html>

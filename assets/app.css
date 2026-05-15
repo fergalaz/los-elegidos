@@ -1,0 +1,91 @@
+:root {
+  --accent-color: #1DB954;
+}
+
+#service-picker {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250, 250, 250, 0.92);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid #eaeaea;
+}
+
+.sp-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.sp-label {
+  font-size: 13px;
+  color: #666;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+
+.sp-buttons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.sp-btn {
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  color: #333;
+  padding: 6px 13px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .15s ease;
+  font-family: inherit;
+  line-height: 1.2;
+}
+
+.sp-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.sp-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* Aplica el color del servicio activo a los links de álbum */
+a.album {
+  color: var(--accent-color) !important;
+}
+
+/* También aplica al "año" en los index */
+.year {
+  color: var(--accent-color) !important;
+}
+
+/* Y al borde de la nota curatorial */
+.note {
+  border-left-color: var(--accent-color) !important;
+}
+
+@media (max-width: 600px) {
+  .sp-inner {
+    padding: 10px 16px;
+    gap: 8px;
+  }
+  .sp-label {
+    width: 100%;
+    font-size: 12px;
+  }
+  .sp-btn {
+    font-size: 12px;
+    padding: 5px 11px;
+  }
+}

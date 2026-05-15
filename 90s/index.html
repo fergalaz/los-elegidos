@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Discos de los 90s — Apple Music</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", system-ui, sans-serif;
+    max-width: 920px;
+    margin: 40px auto;
+    padding: 0 24px 80px;
+    background: #fafafa;
+    color: #111;
+    line-height: 1.5;
+  }
+  nav.decades { display: flex; gap: 18px; margin-bottom: 24px; font-size: 14px; }
+  nav.decades a { color: #888; text-decoration: none; }
+  nav.decades a:hover { color: #fa233b; }
+  nav.decades a.active { color: #111; font-weight: 700; }
+  h1 { font-size: 36px; margin-bottom: 6px; letter-spacing: -0.02em; }
+  .sub { color: #666; margin-bottom: 36px; font-size: 15px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 22px 22px 20px;
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,.12);
+    border-color: #ddd;
+  }
+  .year { font-size: 30px; font-weight: 700; color: #fa233b; letter-spacing: -0.01em; margin-bottom: 6px; }
+  .tag { color: #444; font-size: 13px; line-height: 1.45; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid #eee; color: #888; font-size: 13px; }
+</style>
+  <link rel="stylesheet" href="/assets/app.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <nav class="decades">
+    <a href="/70s/">70s</a>
+    <a href="/80s/">80s</a>
+    <a href="/90s/" class="active">90s</a>
+  </nav>
+
+  <h1>Discos de los 90s</h1>
+  <p class="sub">40 discos curados por año. Clic en un año para abrir su lista y desde ahí cada álbum se abre en Apple Music.</p>
+
+  <div class="grid">
+    <a class="card" href="1990.html">
+      <div class="year">1990</div>
+      <div class="tag">Soda — Canción Animal. Caifanes y Aterciopelados se consolidan.</div>
+    </a>
+    <a class="card" href="1991.html">
+      <div class="year">1991</div>
+      <div class="tag">Nevermind + Ten + Black Album + Achtung Baby.</div>
+    </a>
+    <a class="card" href="1992.html">
+      <div class="year">1992</div>
+      <div class="tag">The Chronic + RATM debut. Café Tacvba debuta.</div>
+    </a>
+    <a class="card" href="1993.html">
+      <div class="year">1993</div>
+      <div class="tag">Alt-rock peak. Wu-Tang debuta. Aterciopelados debuta.</div>
+    </a>
+    <a class="card" href="1994.html">
+      <div class="year">1994</div>
+      <div class="tag">Britpop arriba. Kurt muere. Café Tacvba — Re.</div>
+    </a>
+    <a class="card" href="1995.html">
+      <div class="year">1995</div>
+      <div class="tag">Guerra Britpop. Soda — Sueño Stereo. Chile vuelve al rock.</div>
+    </a>
+    <a class="card" href="1996.html">
+      <div class="year">1996</div>
+      <div class="tag">Electrónica de autor. Los Tres MTV Unplugged.</div>
+    </a>
+    <a class="card" href="1997.html">
+      <div class="year">1997</div>
+      <div class="tag">OK Computer. Daft Punk debuta. Soda se disuelve.</div>
+    </a>
+    <a class="card" href="1998.html">
+      <div class="year">1998</div>
+      <div class="tag">Lauryn Hill + Ray of Light + Mezzanine. Calamaro+Fito.</div>
+    </a>
+    <a class="card" href="1999.html">
+      <div class="year">1999</div>
+      <div class="tag">Teen pop + nu-metal + Eminem. Café Tacvba — Revés/Yo Soy.</div>
+    </a>
+  </div>
+
+  <footer>Curatoría por década para fgalaz@mstudioprod.com.</footer>
+</body>
+</html>
